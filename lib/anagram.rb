@@ -10,7 +10,8 @@ class Anagram
     if word_list.select {|word| word.split("").sort == @word.split("").sort} == nil
       []
     else
-      word_list.select {|word| word.chars.sort == @word.chars.sort}
+      word_list.select {|word| word.split("").sort == @word.split("").sort}
+      #another way to do this is to use .chars instead of .split("")
     end
   end
 
