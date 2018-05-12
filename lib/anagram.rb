@@ -6,7 +6,7 @@ class Anagram
   end
 
   def match(word_list)
-    binding.pry
+    #binding.pry
     if word_list.detect {|word| word == @word} == nil
       []
     else
