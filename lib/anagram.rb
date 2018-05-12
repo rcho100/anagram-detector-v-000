@@ -14,5 +14,4 @@ class Anagram
       #another way to do this is to use .chars instead of .split("")
     end
   end
-
 end
