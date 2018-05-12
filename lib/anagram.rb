@@ -10,7 +10,7 @@ class Anagram
     if word_list.detect {|word| word == @word} == nil
       []
     else
-      word_list.detect {|word| word == @word.split}
+      word_list.detect {|word| word.split("").sort == @word.split("").sort}
     end
   end
 end
