@@ -7,10 +7,12 @@ class Anagram
 
   def match(word_list)
     #binding.pry
-    if word_list.detect {|word| word.split("").sort == @word.split("").sort} == nil
+    if word_list.select {|word| word.split("").sort == @word.split("").sort} == nil
       []
     else
-      word_list.detect {|word| word.split("").sort == @word.split("").sort}.split
+      word_list.select {|word| word.split("").sort == @word.split("").sort}.split
     end
   end
+
+  def
 end
